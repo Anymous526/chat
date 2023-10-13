@@ -29,8 +29,8 @@ adminApi:
   listenIP:
 
 rpc:
-  registerIP: 127.0.0.1                            #作为rpc启动时，注册到zookeeper的IP，api/gateway能访问到此ip和对应的rpcPort中的端口
-  listenIP:                               #默认为0.0.0.0
+  registerIP: 127.0.0.1                    #作为rpc启动时，注册到zookeeper的IP，api/gateway能访问到此ip和对应的rpcPort中的端口
+  listenIP:                                #默认为0.0.0.0
 
 rpcPort:
   openImAdminPort: [ 30200 ]
@@ -55,12 +55,12 @@ mysql:
 # 没有配置表示和OpenIM一致
 log:
   storageLocation: ../logs/           #存放目录
-#  rotationTime: 24                    #日志旋转时间
-#  remainRotationCount: 2              #日志数量
-#  remainLogLevel: 6                   #日志级别 6表示全都打印，
-#  isStdout: false
-#  isJson: false
-#  withStack: false
+  rotationTime: 24                    #日志旋转时间
+  remainRotationCount: 2              #日志数量
+  remainLogLevel: 6                   #日志级别 6表示全都打印，
+  isStdout: true
+  isJson: true
+  withStack: false
 
 # secret: openIM123
 #tokenPolicy:

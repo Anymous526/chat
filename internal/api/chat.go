@@ -66,6 +66,7 @@ func (o *ChatApi) SendVerifyCode(c *gin.Context) {
 	req.Ip = ip
 	resp, err := o.chatClient.SendVerifyCode(c, &req)
 	if err != nil {
+		println(err.Error())
 		apiresp.GinError(c, err)
 		return
 	}
