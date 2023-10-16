@@ -9,6 +9,6 @@ docker push hub.tospinob2b.com/api-rpc:dev
 docker build -f build/docker/api-admin/Dockerfile --build-arg ENV=dev -t  hub.tospinob2b.com/admin-api:dev .
 docker push hub.tospinob2b.com/admin-api:dev
 
-docker build -f build/docker/rcp-amdin/Dockerfile --build-arg ENV=dev -t  hub.tospinob2b.com/amdin-rpc:dev .
-docker push hub.tospinob2b.com/amdin-rpc:dev
+docker build -f build/docker/rpc-admin/Dockerfile --build-arg ENV=dev -t  hub.tospinob2b.com/admin-rpc:dev .
+docker push hub.tospinob2b.com/admin-rpc:dev
 
